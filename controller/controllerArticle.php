@@ -1,14 +1,13 @@
 <?php
 //CONTROLLER
 //Import des ressources
-include('utils.php');
-include('model.php');
+include('../utils.php');
+include('../modelArticle.php');
 
 //1.Connexion à la BDD
 $bdd = connect();
 
 //Appel du model pour récupération des données
-$data = getUser($bdd);
 $data = getArticle($bdd); 
 
 //3. Traiter les données pour ensuite les afficher

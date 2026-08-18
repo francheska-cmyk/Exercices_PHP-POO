@@ -17,11 +17,3 @@ function deleteUser(){
 }
 
 
-function getArticle($bdd){
-    //2. Préparer une requête pour SELECT les utilisateurs
-    $request = $bdd->prepare('SELECT title, pseudo FROM article INNER JOIN user ON user.id = article.user_id');
-
-    $request->execute();
-
-    return $request->fetchAll(PDO::FETCH_ASSOC);
-}

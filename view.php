@@ -12,7 +12,12 @@ $listeArticle ="";
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <a href="controllerUser.php">Utilisateurs</a>
+            <a href="controllerArticle.php">Articles</a>
+        </nav>
+    </header>
     <main>
         <h1>Liste des utilisateurs</h1>
         <ul>
