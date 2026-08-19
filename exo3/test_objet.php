@@ -1,4 +1,5 @@
 <?php
+//import des ressources
 include ('maison.php'); 
 //Création d'un objet maMaison grâce à l'instruction new (appel le constructeur)
 $maMaison = new Maison("PurpleHouse","15","30","3");

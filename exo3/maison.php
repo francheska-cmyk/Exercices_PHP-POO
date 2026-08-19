@@ -25,7 +25,7 @@ class Maison {
     //fonction qui permet de générer l'affichage de la superficie de la maison
     public function surface(){
         $superficie = ($this->longueur) * ($this->largeur) * ($this->nbrEtage); 
-        echo" 
-        <p>La surface de $this->nom est égale à : $superficie m² sur $this->nbrEtage étages </p>";
+        echo
+        "<p>La surface de $this->nom est égale à : $superficie m² sur $this->nbrEtage étages </p>";
     }
 }
