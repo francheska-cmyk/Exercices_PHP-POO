@@ -26,6 +26,6 @@ class Maison {
     public function surface(){
         $superficie = ($this->longueur) * ($this->largeur) * ($this->nbrEtage); 
         echo" 
-        <p>La surface de $this->nom est égale à : $superficie m² </p>";
+        <p>La surface de $this->nom est égale à : $superficie m² sur $this->nbrEtage étages </p>";
     }
 }
