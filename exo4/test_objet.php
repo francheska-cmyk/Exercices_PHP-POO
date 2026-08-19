@@ -4,7 +4,6 @@ include('vehicule.php');
 
 $voiture = new Vehicule ("Mercedes CLK", 4, 250);
 $moto = new Vehicule ("Honda CBR", 2, 280);
-
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +22,8 @@ $moto = new Vehicule ("Honda CBR", 2, 280);
         $voiture->boost();
         $moto->boost();
 
+        $gagnant = $voiture->plusRapide($moto); 
+        echo "Le véhicule le plus rapide est : ".$gagnant->getnomVehicule(); 
         
     ?>
 </body>

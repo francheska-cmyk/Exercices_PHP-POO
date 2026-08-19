@@ -14,7 +14,7 @@ class Vehicule {
 }
 
 //METHODE
-    public function detect(){
+    public function detect(): string{
         if ($this->nbrRoue == 2) {
             $type = "moto";
         }
@@ -25,17 +25,20 @@ class Vehicule {
         return  $type; 
     }
 
-    public function boost (){
+    public function boost () {
         $vitesseBoostee = ($this->vitesse) + 50;
         echo "<p> La nouvelle vitesse de $this->nomVehicule est égale à $vitesseBoostee </p>";
-        return $vitesseBoostee; 
     }
 
-    public function plusRapide (){
-
-    
-        echo "<p> Le véhicule le plus rapide est $this->nomVehicule </p>";
-    }
+    public function getnomVehicule():string {
+        return $this->nomVehicule; 
     }
 
+    public function plusRapide (Vehicule $autreVehicule): Vehicule {
+        if($this->vitesse > $autreVehicule->vitesse){
+            return $this;
+        } 
+            return $autreVehicule; 
+    }
+}
     
