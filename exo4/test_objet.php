@@ -20,7 +20,6 @@ $moto = new Vehicule ("Honda CBR", 2, 280);
         $moto->detect();
 
         $voiture->boost();
-        $moto->boost();
 
         $gagnant = $voiture->plusRapide($moto); 
         echo "Le véhicule le plus rapide est : ".$gagnant->getnomVehicule(); 
